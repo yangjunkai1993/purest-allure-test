@@ -3,7 +3,7 @@ import pytest
 
 token =""
 
-@pytest.mark.skip()
+#@pytest.mark.skip()
 def test_Login_admin():
     headers = {"Content-Type": "application/json; charset=utf-8"}
     login_data = {"username": "hogwarts", "password": "test12345"}
@@ -13,8 +13,8 @@ def test_Login_admin():
     token = r.json().get("data", {}).get("token")
     assert r.status_code==200
 
-@pytest.mark.skip()
-#@pytest.mark.repeat(10) # 重复执行该用例10次
+#@pytest.mark.skip()
+@pytest.mark.repeat(5) # 重复执行该用例5次
 def test_Get_goods():
     url = "https://litemall.hogwarts.ceshiren.com/wx/goods/list"
     params = {"keyword": "3D", "page": 1, "limit": 10}
