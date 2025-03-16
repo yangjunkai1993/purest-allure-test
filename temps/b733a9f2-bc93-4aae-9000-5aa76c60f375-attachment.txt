@@ -1,2 +1,0 @@
-WARNING  pytest_result_log:plugin.py:122 --------------Start: test_post_admin.py::test_Get_goods[884-1000]---------------
-WARNING  pytest_result_log:plugin.py:128 ---------------End: test_post_admin.py::test_Get_goods[884-1000]----------------
